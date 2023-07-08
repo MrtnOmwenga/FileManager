@@ -1,11 +1,12 @@
-import FileUploader from './Components/FileUploader'
+import { React } from 'react';
+import FileDisplay from './Components/FileDisplay';
+import FileUploader from './Components/FileUploader';
 
-function App() {
-  return (
-    <div className="App">
-      <FileUploader />
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <FileUploader />
+    <FileDisplay />
+  </div>
+);
 
 export default App;

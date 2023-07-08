@@ -10,6 +10,8 @@
     "axois": "^0.0.1-security",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.1",
     "multer": "^1.4.5-lts.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "nodemon Server/server.js"
+    "dev": "nodemon Server/server.js",
+    "lint": "start node_modules/.bin/eslint --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +47,18 @@
     ]
   },
   "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "nodemon": "^2.0.22"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }
